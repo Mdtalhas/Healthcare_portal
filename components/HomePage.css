@@ -1,0 +1,93 @@
+/* Main Container */
+.homepage {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Banner Image */
+.banner {
+  margin-bottom: 20px;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Features Heading */
+.homepage-heading {
+  font-size: 24px;
+  margin: 20px 0;
+  color: #007bff;
+  text-align: center;
+}
+
+/* Features Section: Flexbox Layout */
+.features-section {
+  display: flex;
+  align-items: flex-start; /* Align image and features at the top */
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+
+/* Image Section */
+.features-image {
+    flex: 1; /* Ensures the image takes available space */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .feature-side-image {
+    width: 100%;
+    max-width: 500px; /* Increased width */
+    height: auto;
+    max-height: 500px; /* Added max-height for better proportional control */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+
+/* Features Div */
+.features {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Stack features vertically */
+  gap: 20px;
+}
+
+/* Feature Box */
+.feature {
+  background-color: #f9f9f9;
+  padding: 30px 20px; /* Added vertical padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Adjusted width to match the image */
+  margin: 0 auto; /* Center feature boxes */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Feature Title */
+.feature h2 {
+  font-size: 18px;
+  color: #007bff;
+  text-align: center;
+}
+
+/* Feature Description */
+.feature p {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+/* Hover Effect */
+.feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
